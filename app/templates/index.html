@@ -9,20 +9,92 @@
     <h1 class="display-4 text-center">Parents! :)</h1>
     <h2 class="display-4 text-center"> Happy Anniversary!!</h2>
     <h3 class="display-4 text-center">Here to supply all the news at your call :)</h3>
-    <!-- <div id="general news"> -->
 
+    <!-- general news -->
       <div class="card">
         <div class="card-header">
           News Sources
         </div>
     <div class="card-body">
-      <!-- <h3 class="card-title">General News Sources</h3> -->
       <div class="row">
         {{macro.displaySource(general)}}
       </div>
-    <!-- </div>     -->
   </div>
     </div>
+
+    <!-- Business News -->
+    <div class="card">
+      <div class="card-header">
+        Business News
+      </div>
+  <div class="card-body">
+    <div class="row">
+      {{macro.displaySource(business)}}
+    </div>
+</div>
+  </div>
+
+  <!-- Technology News -->
+  <div class="card">
+    <div class="card-header">
+      Technology News
+    </div>
+<div class="card-body">
+  <div class="row">
+    {{macro.displaySource(technology)}}
+  </div>
+</div>
+</div>
+
+<!-- Sports News -->
+<div class="card">
+  <div class="card-header">
+    Sports News
+  </div>
+<div class="card-body">
+<div class="row">
+  {{macro.displaySource(sports)}}
+</div>
+</div>
+</div>
+
+<!-- Health News -->
+<div class="card">
+  <div class="card-header">
+    Health News
+  </div>
+<div class="card-body">
+<div class="row">
+  {{macro.displaySource(health)}}
+</div>
+</div>
+</div>
+
+<!-- Science News -->
+<div class="card">
+  <div class="card-header">
+    Science News
+  </div>
+<div class="card-body">
+<div class="row">
+  {{macro.displaySource(science)}}
+</div>
+</div>
+</div>
+
+<!-- Entertainment News -->
+<div class="card">
+  <div class="card-header">
+    Business News
+  </div>
+<div class="card-body">
+<div class="row">
+  {{macro.displaySource(entertainment)}}
+</div>
+</div>
+</div>
+
+
   </div>
 </div>
 {%endblock%}
