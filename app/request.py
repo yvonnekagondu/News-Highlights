@@ -1,4 +1,4 @@
-import urliib.request
+import urllib.request
 import json
 from .models import Source
 from .models import Articles
@@ -22,12 +22,12 @@ def get_sources(coutry, category):
     """
 
     get_news_url = base_url.format(coutry,category, api_key)
-    with urliib.request.urlopen(get_news_url) as url:
+    with urllib.request.urlopen(get_news_url) as url:
         get_news_data = url.read()
         get_news_response = json.loads(get_news_data)
         source_results = None
 
-    #urliib opens and reads URLs
+    #urllib opens and reads URLs
         if get_news_response['sources']:
             source_results_list = get_news_response['sources']
             source_results = process_sources(source_results_list)
@@ -42,8 +42,8 @@ def process_sources(source_list):
     Returns:
         news_results: A list of news objects
     """
-    new_results = []
-    for source in news_list:
+    news_results = []
+    for source in source_list:
         id = source.get('id')
         print(id)
         name = source.get('name')
@@ -119,5 +119,3 @@ def process_articles(articles_list):
         news_results.append(source_object)
 
     return news_results
-
-        

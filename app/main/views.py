@@ -26,7 +26,7 @@ def index():
                             technology=technoloogy_list,
                             sports=sports_list,
                             health=health_list,
-                            science=science_list
+                            science=science_list,
                             entertainment=entertainment_list)
 
 
