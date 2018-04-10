@@ -1,9 +1,6 @@
 {% extends 'base.html' %} {% import 'macros.html' as macro %}
 {% block content %}
 <div class="container-fluid">
-  <div class="row mb-2">
-    <h3>Top {{name}} Headlines</h3>
-  </div>
   <div class="row">
     {{macro.displayArticleList(news)}}
   </div>
