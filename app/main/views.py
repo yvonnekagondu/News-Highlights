@@ -33,10 +33,11 @@ def index():
 @main.route('/news/<id>')
 def news(id):
     """
-    View articles page function that returns the movie details page and its data
+    View articles page that returns the news article from a highlight
     """
     news_args = get_articles(id)
     highlight_args = 'Route Working!!'
+    # name = f'{results_list}'
     return render_template('news.html',
-                            highlight_param=highlight_args,
-                            news=news_args)
+                           highlight_param=highlight_args,
+                           news=news_args)

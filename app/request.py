@@ -97,13 +97,9 @@ def process_articles(articles_list):
         #We store the nested dictionary in source_id
         source_id = result['source']
         #We extrect and store it in our source dictionary
-        source_dictionary['id']= source_id['name']
-        id = source_dictionary['id']
-        name = source_dictionary['name']
-        print(name)
         author = result.get('author')
         title = result.get('description')
-        url = redult.get('url')
+        url = result.get('url')
         urltoImage = result.get('urltoImage')
         publishedAt = result.get('publishedAt')
 

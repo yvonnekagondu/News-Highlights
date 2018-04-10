@@ -6,95 +6,115 @@
 </div>
 <div class="container-fluid mt-4">
   <div class="jumbotron mt-4">
-    <h1 class="display-4 text-center">Parents! :)</h1>
-    <h2 class="display-4 text-center"> Happy Anniversary!!</h2>
-    <h3 class="display-4 text-center">Here to supply all the news at your call :)</h3>
-
-    <!-- general news -->
+    <!-- <h1 class="display-4 text-center">Hello!</h1>
+    <p class="lead text-center">Welcome to News Source!</p>
+    <p class="lead text-center">A simple app that lets you choose your prefered news source and view all the top headlines from the source.</p>
+    <p class="lead text-center"></p>
+    <hr class="my-4">
+    <p class='text-center'>Your journey starts here!</p>
+    <p class='text-center'>Tap the buttons below to choose news sources by category. Then click on news source to view their top headlines</p> -->
+    <p class="lead text-center">
+      <p class="text-center">
+        <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#generalNews" role="button" aria-expanded="false" aria-controls="collapseExample">General</a>
+        <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#businessNews" role="button" aria-expanded="false" aria-controls="collapseExample">Business</a>
+        <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#technologyNews" role="button" aria-expanded="false" aria-controls="collapseExample">Technology</a>
+        <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#sportsNews" role="button" aria-expanded="false" aria-controls="collapseExample">Sports</a>
+        <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#healthNews" role="button" aria-expanded="false" aria-controls="collapseExample">Health</a>
+        <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#scienceNews" role="button" aria-expanded="false" aria-controls="collapseExample">Science</a>
+        <a class="btn btn-primary btn-lg" data-toggle="collapse" href="#entertainmentNews" role="button" aria-expanded="false" aria-controls="collapseExample">Entertainment</a>
+      </p>
+    </p>
+    <div id="generalNews" class="collapse">
       <div class="card">
         <div class="card-header">
-          News Sources
+          Choose prefered news source.
         </div>
-    <div class="card-body">
-      <div class="row">
-        {{macro.displaySource(general)}}
+        <div class="card-body">
+          <h3 class="card-title">General News Sources</h3>
+          <div class="row">
+            {{macro.displaySourceList(general)}}
+          </div>
+        </div>
       </div>
-  </div>
     </div>
-
-    <!-- Business News -->
-    <div class="card">
-      <div class="card-header">
-        Business News
+    <div id="businessNews" class="collapse">
+      <div class="card">
+        <div class="card-header">
+          Choose prefered news source.
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Business News Sources</h3>
+          <div class="row">
+            {{macro.displaySourceList(business)}}
+          </div>
+        </div>
       </div>
-  <div class="card-body">
-    <div class="row">
-      {{macro.displaySource(business)}}
     </div>
-</div>
-  </div>
-
-  <!-- Technology News -->
-  <div class="card">
-    <div class="card-header">
-      Technology News
+    <div id="technologyNews" class="collapse">
+      <div class="card">
+        <div class="card-header">
+          Choose prefered news source. And all Moringarians say aye! More fire!
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Technology News Sources</h3>
+          <div class="row">
+            {{macro.displaySourceList(technology)}}
+          </div>
+        </div>
+      </div>
     </div>
-<div class="card-body">
-  <div class="row">
-    {{macro.displaySource(technology)}}
+    <div id="sportsNews" class="collapse">
+      <div class="card">
+        <div class="card-header">
+          Choose prefered news source.
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Sports News Sources</h3>
+          <div class="row">
+            {{macro.displaySourceList(sports)}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="healthNews" class="collapse">
+      <div class="card">
+        <div class="card-header">
+          Choose prefered news source.
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Health News Sources</h3>
+          <div class="row">
+            {{macro.displaySourceList(health)}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="scienceNews" class="collapse">
+      <div class="card">
+        <div class="card-header">
+          Choose prefered news source.
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Science News Sources</h3>
+          <div class="row">
+            {{macro.displaySourceList(science)}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="entertainmentNews" class="collapse">
+      <div class="card">
+        <div class="card-header">
+          Choose prefered news source.
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Entertainment News Sources</h3>
+          <div class="row">
+            {{macro.displaySourceList(entertainment)}}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-
-<!-- Sports News -->
-<div class="card">
-  <div class="card-header">
-    Sports News
-  </div>
-<div class="card-body">
-<div class="row">
-  {{macro.displaySource(sports)}}
-</div>
-</div>
-</div>
-
-<!-- Health News -->
-<div class="card">
-  <div class="card-header">
-    Health News
-  </div>
-<div class="card-body">
-<div class="row">
-  {{macro.displaySource(health)}}
-</div>
-</div>
-</div>
-
-<!-- Science News -->
-<div class="card">
-  <div class="card-header">
-    Science News
-  </div>
-<div class="card-body">
-<div class="row">
-  {{macro.displaySource(science)}}
-</div>
-</div>
-</div>
-
-<!-- Entertainment News -->
-<div class="card">
-  <div class="card-header">
-    Business News
-  </div>
-<div class="card-body">
-<div class="row">
-  {{macro.displaySource(entertainment)}}
-</div>
-</div>
-</div>
-
-
-  </div>
-</div>
-{%endblock%}
+{% endblock%}
