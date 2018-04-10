@@ -1,7 +1,7 @@
 # News Source
 This is an application that allows a user to list and preview news articles from various sources.
 
-##Author
+## Author
 Yvonne Kagondu
 
 ## Prerequisites
