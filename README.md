@@ -24,7 +24,7 @@ The app is simple to use. In case of any queries contact the author.
 Contact me on my email; ykagondu@gmail.com with questions, comment and additions that can be added to the project.
 
 ## Bugs
-No bugs have been identified s far but incase of any contact author
+No bugs have been identified as far but incase of any contact author
 
 ## License
 MIT License.
